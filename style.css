@@ -11,13 +11,7 @@ body{
   color:var(--text);
   background:radial-gradient(circle at 50% -10%,rgba(216,169,47,.14),transparent 34%),linear-gradient(180deg,#040404,#090909 60%,#050505)
 }
-.loading-screen{
-  position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#050505;
-  transition:opacity .45s ease,visibility .45s ease
 }
-.loading-screen img{width:120px;height:120px;border-radius:50%;animation:pulse 1.2s ease-in-out infinite}
-.loading-screen.hidden{opacity:0;visibility:hidden}
-@keyframes pulse{50%{transform:scale(1.06);filter:drop-shadow(0 0 24px rgba(216,169,47,.45))}}
 .ambient{position:fixed;border-radius:999px;filter:blur(100px);pointer-events:none;opacity:.12}
 .ambient-one{width:300px;height:300px;background:#d09b20;top:-120px;right:-80px}
 .ambient-two{width:250px;height:250px;background:#76540b;bottom:-110px;left:-90px}
@@ -91,4 +85,29 @@ footer{margin-top:24px;color:#817a6e;font-size:.78rem}
 @media(prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
+}
+
+
+/* v3.1：只顯示首頁中央品牌 Logo，避免原圖尺寸溢出 */
+.hero .logo {
+  display: block;
+  width: 176px;
+  height: 176px;
+  max-width: 48vw;
+  max-height: 48vw;
+  margin: 0 auto 18px;
+  object-fit: cover;
+}
+
+body > img,
+.shell > img,
+.card > img:not(.logo) {
+  display: none !important;
+}
+
+@media (max-width: 560px) {
+  .hero .logo {
+    width: 148px;
+    height: 148px;
+  }
 }

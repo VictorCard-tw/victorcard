@@ -24,12 +24,7 @@
   } else {
     announcement.hidden = true;
   }
-
-  window.addEventListener("load", () => {
-    setTimeout(() => document.getElementById("loadingScreen").classList.add("hidden"), 250);
-  });
-
-  const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) entry.target.classList.add("visible");
     });

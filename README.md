@@ -1,25 +1,17 @@
-Victor Card Website v3.0 完整版
+Victor Card Website v3.1 旗艦修正版
 
-這版包含：
-- 台中勤美卡牌市集大標題
-- Logo 放大與金色光暈
-- 本週活動公告
-- 星期六／星期日攤位報名
-- 官方 LINE 浮動按鈕
-- Google 地圖內嵌
-- SEO、分享預覽圖、結構化資料
-- 載入動畫、滾動動畫
-- 手機版與 PWA
-
-以後要改資料，只修改 config.js：
-- announcement：本週活動
-- booking：六日表單
-- links：社群網址
-- business：營業時間與地址
+本次修正：
+- 完全移除載入畫面的大型 Logo
+- 首頁只保留中央品牌 Logo
+- 限制 Logo 最大尺寸，避免原圖溢出
+- CSS、JavaScript、Logo 加入 v3.1 版本參數，避免瀏覽器讀取舊快取
+- 保留報名按鈕、社群連結、公告、Google 地圖、SEO、分享預覽與 PWA
 
 上傳方式：
-1. 保留 GitHub 內的 CNAME。
-2. 解壓縮 ZIP。
+1. GitHub 內的 CNAME 保留，不要刪除。
+2. 解壓縮本 ZIP。
 3. GitHub → Add file → Upload files。
-4. 上傳全部檔案並 Commit changes。
-5. 等待 1～2 分鐘，開啟 https://victorcard.tw 後按 Ctrl + F5。
+4. 將所有檔案拖入並按 Commit changes。
+5. 等待約 1～2 分鐘。
+6. 開啟 https://victorcard.tw/?v=31
+7. 按 Ctrl + F5 強制重新整理。

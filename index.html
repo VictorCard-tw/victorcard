@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Victor Card｜勤美卡牌市集｜台中卡牌交流空間</title>
-  <meta name="description" content="Victor Card 勤美卡牌市集，位於台中勤美商圈。每週六、日 11:00～18:00，提供卡牌收藏、交流、市集與攤位報名。">
-  <meta name="keywords" content="Victor Card, 勤美卡牌市集, 台中卡牌市集, 卡牌交流, 卡牌收藏, 攤位報名, 勤美商圈">
+  <title>Victor Card｜台中勤美卡牌市集</title>
+  <meta name="description" content="Victor Card 台中勤美卡牌市集，位於台中勤美商圈。每週六、日 11:00～18:00，提供卡牌收藏、交流、市集與攤位報名。">
+  <meta name="keywords" content="Victor Card, 台中勤美卡牌市集, 台中卡牌市集, 卡牌交流, 卡牌收藏, 攤位報名, 勤美商圈">
   <meta name="author" content="Victor Card">
-  <meta name="theme-color" content="#070707">
   <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#070707">
 
   <link rel="canonical" href="https://victorcard.tw/">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -20,16 +20,16 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:site_name" content="Victor Card">
-  <meta property="og:title" content="Victor Card｜勤美卡牌市集">
+  <meta property="og:title" content="Victor Card｜台中勤美卡牌市集">
   <meta property="og:description" content="台中勤美商圈卡牌收藏、交流與市集空間。每週六、日開放攤位報名。">
   <meta property="og:url" content="https://victorcard.tw/">
   <meta property="og:image" content="https://victorcard.tw/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Victor Card 勤美卡牌市集">
+  <meta property="og:image:alt" content="Victor Card 台中勤美卡牌市集">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Victor Card｜勤美卡牌市集">
+  <meta name="twitter:title" content="Victor Card｜台中勤美卡牌市集">
   <meta name="twitter:description" content="台中勤美商圈卡牌收藏、交流與市集空間。">
   <meta name="twitter:image" content="https://victorcard.tw/og-image.jpg">
 
@@ -37,7 +37,7 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Victor Card 勤美卡牌市集",
+    "name": "Victor Card 台中勤美卡牌市集",
     "url": "https://victorcard.tw/",
     "logo": "https://victorcard.tw/logo.png",
     "image": "https://victorcard.tw/og-image.jpg",
@@ -61,28 +61,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+    <img src="logo.png" alt="">
+  </div>
+
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
 
   <main class="shell">
     <section class="card">
-      <header class="hero">
+      <header class="hero reveal">
         <img class="logo" src="logo.png" alt="Victor Card 皇冠 V Logo">
         <p class="brand">VICTOR CARD</p>
-        <h1>勤美卡牌市集</h1>
+        <h1>台中勤美卡牌市集</h1>
         <p class="tagline">收藏・交流・市集</p>
         <p class="intro">台中勤美商圈的卡牌收藏與交流空間<br>補充包・鑑定卡・卡友交流・攤位報名</p>
       </header>
 
-      <section class="signup">
+      <section class="announcement reveal" id="announcement">
+        <span class="announcement-badge" id="announcementBadge"></span>
+        <h2 id="announcementTitle"></h2>
+        <p id="announcementDescription"></p>
+      </section>
+
+      <section class="signup reveal">
         <p class="section-label">本週攤位報名</p>
         <div class="signup-grid">
-          <a class="signup-btn" href="https://forms.gle/cuP7F7r66FG4XiPX8" target="_blank" rel="noopener">
+          <a class="signup-btn" id="saturdayBooking" href="#" target="_blank" rel="noopener">
             <span class="calendar">📅</span>
             <span class="day">星期六攤位</span>
             <span class="cta">立即報名 →</span>
           </a>
-          <a class="signup-btn" href="https://forms.gle/yra461o5ywByRK2N7" target="_blank" rel="noopener">
+          <a class="signup-btn" id="sundayBooking" href="#" target="_blank" rel="noopener">
             <span class="calendar">📅</span>
             <span class="day">星期日攤位</span>
             <span class="cta">立即報名 →</span>
@@ -90,36 +100,36 @@
         </div>
       </section>
 
-      <nav class="links" aria-label="官方連結">
-        <a href="https://line.me/R/ti/p/@850gclbi" target="_blank" rel="noopener"><span class="social-icon">💬</span><span>官方 LINE</span></a>
-        <a href="https://share.google/r9lwlEn47a92XLRvV" target="_blank" rel="noopener"><span class="social-icon">📍</span><span>Google 地圖</span></a>
-        <a href="https://www.instagram.com/victorcard7717?igsh=M3RtM3pleXg4dm11&utm_source=qr" target="_blank" rel="noopener"><span class="social-icon">📸</span><span>Instagram</span></a>
-        <a href="https://www.facebook.com/share/18uqRnv14C/?mibextid=wwXIfr" target="_blank" rel="noopener"><span class="social-icon">👍</span><span>Facebook</span></a>
-        <a href="https://www.threads.com/@victorcard7717?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener"><span class="social-icon">🧵</span><span>Threads</span></a>
+      <nav class="links reveal" aria-label="官方連結">
+        <a id="lineLink" href="#" target="_blank" rel="noopener"><span class="social-icon">💬</span><span>官方 LINE</span></a>
+        <a id="mapLink" href="#" target="_blank" rel="noopener"><span class="social-icon">📍</span><span>Google 地圖</span></a>
+        <a id="instagramLink" href="#" target="_blank" rel="noopener"><span class="social-icon">📸</span><span>Instagram</span></a>
+        <a id="facebookLink" href="#" target="_blank" rel="noopener"><span class="social-icon">👍</span><span>Facebook</span></a>
+        <a id="threadsLink" href="#" target="_blank" rel="noopener"><span class="social-icon">🧵</span><span>Threads</span></a>
       </nav>
 
-      <section class="info">
+      <section class="info reveal">
         <div>
           <span class="label">營業時間</span>
-          <strong>每週六、日 11:00～18:00</strong>
+          <strong id="hours"></strong>
         </div>
         <div>
           <span class="label">地址</span>
-          <strong>台中市西區公益路155巷9號6樓之一</strong>
+          <strong id="address"></strong>
         </div>
       </section>
 
-      <section class="map-section">
+      <section class="map-section reveal">
         <div class="map-heading">
           <div>
             <span class="label">交通位置</span>
             <h2>Google 地圖</h2>
           </div>
-          <a href="https://share.google/r9lwlEn47a92XLRvV" target="_blank" rel="noopener">開啟導航</a>
+          <a id="mapNavLink" href="#" target="_blank" rel="noopener">開啟導航</a>
         </div>
         <div class="map-frame">
           <iframe
-            title="Victor Card 勤美卡牌市集 Google 地圖"
+            title="Victor Card 台中勤美卡牌市集 Google 地圖"
             src="https://www.google.com/maps?q=%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%8D%80%E5%85%AC%E7%9B%8A%E8%B7%AF155%E5%B7%B79%E8%99%9F6%E6%A8%93%E4%B9%8B%E4%B8%80&output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
@@ -130,6 +140,10 @@
       <footer>© <span id="year"></span> Victor Card</footer>
     </section>
   </main>
+
+  <a class="floating-line" id="floatingLine" href="#" target="_blank" rel="noopener" aria-label="加入官方 LINE">💬</a>
+
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

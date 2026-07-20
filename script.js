@@ -14,8 +14,6 @@
   document.getElementById("threadsLink").href = c.links.threads;
 document.getElementById("hours").textContent = c.business.hours;
   document.getElementById("address").textContent = c.business.address;
-  const addressLink = document.getElementById("addressLink");
-  if (addressLink) addressLink.href = c.links.map;
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) entry.target.classList.add("visible");

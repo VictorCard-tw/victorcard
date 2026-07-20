@@ -368,3 +368,83 @@ body > div:not(.shell):not(.floating-line),
 .links a span {
   line-height: 1;
 }
+
+
+/* Professional Edition 2026 · Release 1 */
+.logo-home {
+  display: inline-block;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.logo-home:focus-visible {
+  outline: 3px solid rgba(245, 216, 120, .55);
+  outline-offset: 5px;
+}
+
+.signup-btn {
+  letter-spacing: .01em;
+}
+
+.signup-btn .cta {
+  margin-top: 2px;
+}
+
+.address-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.address-link:hover strong,
+.address-link:focus-visible strong {
+  color: var(--gold-light);
+}
+
+.site-footer {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display: grid;
+  gap: 5px;
+  color: #8d8679;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+
+.footer-brand {
+  color: var(--gold-light);
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.footer-version {
+  color: #aaa295;
+}
+
+.footer-date {
+  color: #746e64;
+}
+
+@media (max-width: 560px) {
+  .shell {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card {
+    border-radius: 24px;
+  }
+
+  h1 {
+    font-size: clamp(1.95rem, 10vw, 2.7rem);
+    letter-spacing: .04em;
+  }
+
+  .signup-btn {
+    min-height: 116px;
+  }
+
+  .links a {
+    min-height: 58px;
+  }
+}

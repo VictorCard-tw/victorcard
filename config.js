@@ -1,4 +1,9 @@
 window.VICTOR_CONFIG = {
+  release: {
+    name: "Professional Edition 2026",
+    version: "Release 1",
+    updated: "2026/07/20"
+  },
 booking: {
     saturday: "https://forms.gle/cuP7F7r66FG4XiPX8",
     sunday: "https://forms.gle/yra461o5ywByRK2N7"

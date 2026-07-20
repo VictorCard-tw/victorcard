@@ -432,3 +432,49 @@ body > div:not(.shell):not(.floating-line),
 .signup-notice p + p {
   margin-top: 6px;
 }
+
+/* Release 1.4：攤位示意圖 */
+.booth-layout-section {
+  margin-top: 18px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(216,169,47,.13), rgba(216,169,47,.03));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.booth-layout-heading h2 {
+  margin: 6px 0 6px;
+  font-size: 1.35rem;
+}
+
+.booth-layout-heading p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.booth-layout-link {
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid rgba(216,169,47,.32);
+  background: #090909;
+  box-shadow: 0 14px 34px rgba(0,0,0,.28);
+}
+
+.booth-layout-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .3s ease;
+}
+
+.booth-layout-link:hover .booth-layout-image {
+  transform: scale(1.012);
+}
+
+@media(max-width:560px){
+  .booth-layout-section{padding:14px}
+  .booth-layout-heading h2{font-size:1.2rem}
+  .booth-layout-heading p{font-size:.92rem}
+}

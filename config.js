@@ -1,11 +1,5 @@
 window.VICTOR_CONFIG = {
-  announcement: {
-    enabled: true,
-    badge: "本週活動",
-    title: "歡迎收藏家與攤主交流",
-    description: "補充包・鑑定卡・卡牌交流・攤位報名"
-  },
-  booking: {
+booking: {
     saturday: "https://forms.gle/cuP7F7r66FG4XiPX8",
     sunday: "https://forms.gle/yra461o5ywByRK2N7"
   },
@@ -14,7 +8,8 @@ window.VICTOR_CONFIG = {
     map: "https://share.google/r9lwlEn47a92XLRvV",
     instagram: "https://www.instagram.com/victorcard7717?igsh=M3RtM3pleXg4dm11&utm_source=qr",
     facebook: "https://www.facebook.com/share/18uqRnv14C/?mibextid=wwXIfr",
-    threads: "https://www.threads.com/@victorcard7717?igshid=NTc4MTIwNjQ2YQ=="
+    threads: "https://www.threads.com/@victorcard7717?igshid=NTc4MTIwNjQ2YQ==",
+    review: "https://g.page/r/CaLxKVSXgwdYEBM/review"
   },
   business: {
     hours: "每週六、日 11:00～18:00",

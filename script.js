@@ -12,18 +12,10 @@
   document.getElementById("instagramLink").href = c.links.instagram;
   document.getElementById("facebookLink").href = c.links.facebook;
   document.getElementById("threadsLink").href = c.links.threads;
+  document.getElementById("reviewLink").href = c.links.review;
 
   document.getElementById("hours").textContent = c.business.hours;
   document.getElementById("address").textContent = c.business.address;
-
-  const announcement = document.getElementById("announcement");
-  if (c.announcement.enabled) {
-    document.getElementById("announcementBadge").textContent = c.announcement.badge;
-    document.getElementById("announcementTitle").textContent = c.announcement.title;
-    document.getElementById("announcementDescription").textContent = c.announcement.description;
-  } else {
-    announcement.hidden = true;
-  }
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) entry.target.classList.add("visible");

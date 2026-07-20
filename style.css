@@ -86,40 +86,15 @@ h1{
   letter-spacing:.18em;
 }
 
-.intro{
-  margin:20px auto 0;
-  max-width:560px;
-  color:#d8d0c1;
-  line-height:1.75;
-  font-size:.98rem;
-}
 
-.announcement{
-  margin-top:26px;
-  padding:22px 18px;
-  border:1px solid var(--border);
-  border-radius:20px;
-  background:linear-gradient(135deg,rgba(216,169,47,.13),rgba(216,169,47,.03));
-}
 
-.announcement-badge{
-  display:inline-block;
-  margin-bottom:8px;
-  color:var(--gold-light);
-  font-size:.78rem;
-  letter-spacing:.15em;
-}
 
-.announcement h2{
-  margin:0;
-  font-size:1.35rem;
-}
 
-.announcement p{
-  margin:8px 0 0;
-  color:var(--muted);
-  line-height:1.6;
-}
+
+
+
+
+
 
 .signup{
   margin-top:22px;
@@ -320,4 +295,60 @@ body > div:not(.shell):not(.floating-line),
 @media(prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
+}
+
+
+/* v4.0 Google 評論 */
+.links .review-link {
+  grid-column: 1 / -1;
+  color: #17120a;
+  background: linear-gradient(180deg, #f9dc7b, #d6a31f);
+  border-color: rgba(255,255,255,.28);
+  font-weight: 800;
+}
+
+.links .review-link:hover {
+  background: linear-gradient(180deg, #ffe798, #ddb33b);
+}
+
+.review-section {
+  margin-top: 18px;
+  padding: 24px 18px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(216,169,47,.13), rgba(216,169,47,.03));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.review-stars {
+  color: var(--gold-light);
+  letter-spacing: .16em;
+  font-size: 1.35rem;
+}
+
+.review-section h2 {
+  margin: 10px 0 7px;
+  font-size: 1.35rem;
+}
+
+.review-section p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.review-section a {
+  width: fit-content;
+  margin: 16px auto 0;
+  min-height: 48px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #17120a;
+  background: linear-gradient(180deg, #f9dc7b, #d6a31f);
+  border-radius: 14px;
+  font-weight: 900;
+  box-shadow: 0 12px 30px rgba(216,169,47,.2);
 }

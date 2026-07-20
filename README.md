@@ -1,18 +1,21 @@
-Victor Card Website v3.2 Ultimate
+Victor Card Website v4.0
 
-本次修正：
-- 完全移除所有背景裝飾方塊
-- 重寫整份 CSS
-- 背景固定為純黑
-- 保留中央 Logo、報名按鈕、公告、社群連結、地圖、SEO 與 PWA
-- 加入防止未預期圖片或裝飾元素顯示的保護規則
-- 使用 v3.2 快取版本
+已完成：
+- 刪除「本週活動」整個區塊
+- 刪除品牌介紹兩行文字
+- 保留 Logo、台中勤美卡牌市集、收藏・交流・市集
+- 星期六／星期日攤位報名
+- 官方 LINE、Google 地圖、Instagram、Facebook、Threads
+- 新增 Google 評論按鈕
+- 新增 Google 五星評論區塊
+- Google 地圖內嵌
+- SEO、分享預覽、favicon、PWA
 
 上傳方式：
 1. GitHub 內的 CNAME 保留。
-2. 解壓縮本 ZIP。
+2. 解壓縮 ZIP。
 3. GitHub → Add file → Upload files。
-4. 全部上傳並 Commit changes。
+4. 上傳全部檔案並 Commit changes。
 5. 等待 1～2 分鐘。
-6. 開啟 https://victorcard.tw/?v=32
+6. 開啟 https://victorcard.tw/?v=40
 7. 按 Ctrl + F5。

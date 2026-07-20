@@ -8,8 +8,7 @@ booking: {
     map: "https://share.google/r9lwlEn47a92XLRvV",
     instagram: "https://www.instagram.com/victorcard7717?igsh=M3RtM3pleXg4dm11&utm_source=qr",
     facebook: "https://www.facebook.com/share/18uqRnv14C/?mibextid=wwXIfr",
-    threads: "https://www.threads.com/@victorcard7717?igshid=NTc4MTIwNjQ2YQ==",
-    review: "https://g.page/r/CaLxKVSXgwdYEBM/review"
+    threads: "https://www.threads.com/@victorcard7717?igshid=NTc4MTIwNjQ2YQ=="
   },
   business: {
     hours: "每週六、日 11:00～18:00",

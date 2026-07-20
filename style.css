@@ -352,3 +352,19 @@ body > div:not(.shell):not(.floating-line),
   font-weight: 900;
   box-shadow: 0 12px 30px rgba(216,169,47,.2);
 }
+
+
+.brand-icon {
+  width: 27px;
+  height: 27px;
+  flex: 0 0 27px;
+  display: block;
+}
+
+.links a {
+  gap: 10px;
+}
+
+.links a span {
+  line-height: 1;
+}

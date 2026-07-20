@@ -12,9 +12,7 @@
   document.getElementById("instagramLink").href = c.links.instagram;
   document.getElementById("facebookLink").href = c.links.facebook;
   document.getElementById("threadsLink").href = c.links.threads;
-  document.getElementById("reviewLink").href = c.links.review;
-
-  document.getElementById("hours").textContent = c.business.hours;
+document.getElementById("hours").textContent = c.business.hours;
   document.getElementById("address").textContent = c.business.address;
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

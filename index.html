@@ -2,252 +2,169 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victor Card｜台中勤美卡牌市集</title>
-  <meta name="description" content="Victor Card 台中勤美卡牌市集，位於台中勤美商圈。每週六、日 11:00～18:00，提供卡牌收藏、交流、市集與線上攤位預約。">
+  <meta name="description" content="Victor Card 台中勤美卡牌市集，位於台中勤美商圈。每週六、日 11:00～18:00，提供卡牌收藏、交流、市集與攤位報名。">
+  <meta name="keywords" content="Victor Card, 台中勤美卡牌市集, 台中卡牌市集, 卡牌交流, 卡牌收藏, 攤位報名, 勤美商圈">
+  <meta name="author" content="Victor Card">
+  <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#070707">
+
   <link rel="canonical" href="https://victorcard.tw/">
-  <link rel="icon" href="favicon.ico">
-  <style>
-    :root{
-      --bg:#050505;
-      --panel:#0f0f0f;
-      --panel2:#151515;
-      --gold:#d5a927;
-      --gold2:#f0c94b;
-      --text:#f5f1e7;
-      --muted:#b7ab86;
-      --line:#66571e;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      color:var(--text);
-      background:
-        radial-gradient(circle at 20% 10%,rgba(117,83,0,.22),transparent 28%),
-        radial-gradient(circle at 80% 15%,rgba(117,83,0,.12),transparent 24%),
-        var(--bg);
-      font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;
-      line-height:1.65;
-    }
-    a{color:inherit}
-    img{max-width:100%;display:block}
-    .shell{width:min(1120px,calc(100% - 28px));margin:auto;padding:28px 0 70px}
-    .card{
-      border:1px solid var(--line);
-      border-radius:24px;
-      background:rgba(13,13,13,.94);
-      box-shadow:0 24px 70px rgba(0,0,0,.45);
-      overflow:hidden;
-    }
-    .hero{
-      text-align:center;
-      padding:52px 24px 38px;
-      border-bottom:1px solid var(--line);
-      background:linear-gradient(180deg,rgba(52,40,7,.58),rgba(5,5,5,.1));
-    }
-    .logo{width:128px;height:128px;object-fit:contain;margin:0 auto 16px}
-    .brand{letter-spacing:.34em;color:var(--gold2);font-weight:800;font-size:.84rem;margin:0}
-    h1{font-size:clamp(2rem,5vw,3.4rem);margin:8px 0 4px;letter-spacing:.04em}
-    .tagline{margin:0;color:var(--muted);letter-spacing:.28em}
-    section{padding:34px 36px}
-    section+section{border-top:1px solid rgba(102,87,30,.65)}
-    .section-label{color:var(--gold2);font-size:.78rem;letter-spacing:.18em;font-weight:800;margin:0 0 6px}
-    h2{margin:0 0 8px;font-size:1.65rem}
-    .lead{color:var(--muted);margin:0 0 22px}
-    .booking-wrap{max-width:620px;margin:auto}
-    .booking-btn{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      text-decoration:none;
-      padding:22px 24px;
-      border:1px solid var(--gold);
-      border-radius:16px;
-      background:linear-gradient(135deg,#e2b72e,#8b6100);
-      color:#080808;
-      box-shadow:0 12px 35px rgba(213,169,39,.19);
-      transition:.2s ease;
-    }
-    .booking-btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
-    .booking-icon{font-size:1.7rem}
-    .booking-title{font-size:1.45rem;font-weight:900;flex:1}
-    .booking-cta{font-weight:900;white-space:nowrap}
-    .notice{
-      margin-top:16px;
-      padding:14px 16px;
-      border-left:3px solid var(--gold);
-      background:rgba(76,56,8,.33);
-      color:#e7dba9;
-      border-radius:0 10px 10px 0;
-    }
-    .image-frame{
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:10px;
-      background:#050505;
-      overflow:hidden;
-    }
-    .image-frame img{width:100%;height:auto;border-radius:10px}
-    .info-grid{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:14px;
-    }
-    .info-box{
-      border:1px solid rgba(102,87,30,.78);
-      border-radius:14px;
-      padding:18px;
-      background:rgba(255,255,255,.018);
-    }
-    .info-box span{display:block;color:var(--muted);font-size:.82rem;margin-bottom:4px}
-    .info-box strong{font-size:1.08rem}
-    .links{
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:12px;
-    }
-    .links a{
-      text-decoration:none;
-      text-align:center;
-      padding:15px 10px;
-      border:1px solid var(--line);
-      border-radius:12px;
-      background:#111;
-      color:#efe3b7;
-      font-weight:800;
-      transition:.2s ease;
-    }
-    .links a:hover{border-color:var(--gold2);transform:translateY(-2px)}
-    .map-frame{
-      border-radius:16px;
-      overflow:hidden;
-      border:1px solid var(--line);
-      height:420px;
-    }
-    .map-frame iframe{width:100%;height:100%;border:0}
-    .review{text-align:center}
-    .stars{font-size:1.6rem;color:var(--gold2);letter-spacing:.18em}
-    .review a{
-      display:inline-block;margin-top:12px;padding:12px 18px;
-      border:1px solid var(--gold);border-radius:10px;
-      text-decoration:none;color:var(--gold2);font-weight:800;
-    }
-    footer{text-align:center;color:#8e856d;padding:26px;font-size:.9rem;border-top:1px solid var(--line)}
-    .parking-section{padding-bottom:42px}
-    .parking-note{margin-top:12px;color:var(--muted);font-size:.9rem}
-    @media(max-width:760px){
-      section{padding:28px 18px}
-      .hero{padding:40px 18px 30px}
-      .logo{width:104px;height:104px}
-      .info-grid,.links{grid-template-columns:1fr}
-      .booking-btn{align-items:flex-start;flex-wrap:wrap}
-      .booking-title{min-width:180px}
-      .map-frame{height:340px}
-    }
-  </style>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="Victor Card">
+  <meta property="og:title" content="Victor Card｜台中勤美卡牌市集">
+  <meta property="og:description" content="台中勤美商圈卡牌收藏、交流與市集空間。每週六、日開放攤位報名。">
+  <meta property="og:url" content="https://victorcard.tw/">
+  <meta property="og:image" content="https://victorcard.tw/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Victor Card 台中勤美卡牌市集">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Victor Card｜台中勤美卡牌市集">
+  <meta name="twitter:description" content="台中勤美商圈卡牌收藏、交流與市集空間。">
+  <meta name="twitter:image" content="https://victorcard.tw/og-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Victor Card 台中勤美卡牌市集",
+    "url": "https://victorcard.tw/",
+    "logo": "https://victorcard.tw/logo.png",
+    "image": "https://victorcard.tw/og-image.jpg",
+    "description": "台中勤美商圈卡牌收藏、交流與市集空間。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "公益路155巷9號6樓之一",
+      "addressLocality": "西區",
+      "addressRegion": "台中市",
+      "addressCountry": "TW"
+    },
+    "openingHours": ["Sa 11:00-18:00", "Su 11:00-18:00"],
+    "sameAs": [
+      "https://www.instagram.com/victorcard7717",
+      "https://www.facebook.com/share/18uqRnv14C/",
+      "https://www.threads.com/@victorcard7717"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css?v=1.4">
 </head>
 <body>
+<div class="ambient ambient-one"></div>
+
   <main class="shell">
-    <div class="card">
-      <header class="hero">
-        <img class="logo" src="logo.png" alt="Victor Card 皇冠 V Logo">
+    <section class="card">
+      <header class="hero reveal">
+        <img class="logo" src="logo.png?v=4.1" alt="Victor Card 皇冠 V Logo">
         <p class="brand">VICTOR CARD</p>
         <h1>台中勤美卡牌市集</h1>
         <p class="tagline">收藏・交流・市集</p>
-      </header>
-
-      <section>
-        <div class="booking-wrap">
-          <p class="section-label">BOOTH BOOKING</p>
-          <h2>攤位預約</h2>
-          <p class="lead">選擇日期與攤位位置，使用 LINE 登入後即可送出預約。</p>
-          <a class="booking-btn"
-             href="https://liff.line.me/2010783748-cWB4W23q"
-             target="_blank"
-             rel="noopener">
-            <span class="booking-icon">📅</span>
-            <span class="booking-title">攤位預約</span>
-            <span class="booking-cta">立即預約 →</span>
+</header>
+<section class="signup reveal">
+        <p class="section-label">本週攤位報名</p>
+        <div class="signup-notice">
+          <p>📌 完成報名後，請加入官方 LINE，確認報名資訊並保留您的攤位。</p>
+          <p>📌 活動當天請先至櫃台完成報到及繳費，由工作人員安排您的攤位。</p>
+        </div>
+        <div class="signup-grid">
+          <a class="signup-btn" id="saturdayBooking" href="#" target="_blank" rel="noopener">
+            <span class="calendar">📅</span>
+            <span class="day">星期六攤位</span>
+            <span class="cta">立即報名 →</span>
           </a>
-          <div class="notice">
-            完成送出後，請留意主辦方確認；活動當天請攜帶證件至現場核對。
+          <a class="signup-btn" id="sundayBooking" href="#" target="_blank" rel="noopener">
+            <span class="calendar">📅</span>
+            <span class="day">星期日攤位</span>
+            <span class="cta">立即報名 →</span>
+          </a>
+        </div>
+      </section>
+
+      <nav class="links reveal" aria-label="官方連結">
+        <a id="lineLink" href="#" target="_blank" rel="noopener"><img class="brand-icon" src="line.svg" alt=""><span>官方 LINE</span></a>
+        <a id="mapLink" href="#" target="_blank" rel="noopener"><img class="brand-icon" src="google-maps.svg" alt=""><span>Google 地圖</span></a>
+        <a id="instagramLink" href="#" target="_blank" rel="noopener"><img class="brand-icon" src="instagram.svg" alt=""><span>Instagram</span></a>
+        <a id="facebookLink" href="#" target="_blank" rel="noopener"><img class="brand-icon" src="facebook.svg" alt=""><span>Facebook</span></a>
+        <a id="threadsLink" href="#" target="_blank" rel="noopener"><img class="brand-icon" src="threads.svg" alt=""><span>Threads</span></a>
+</nav>
+
+      <section class="info reveal">
+        <div>
+          <span class="label">營業時間</span>
+          <strong id="hours"></strong>
+        </div>
+        <div>
+          <span class="label">地址</span>
+          <strong id="address"></strong>
+        </div>
+      </section>
+
+      <section class="parking-section reveal">
+        <div class="parking-heading">
+          <span class="label">交通位置</span>
+          <h2>附近停車場資訊</h2>
+          <p>提供 A、B、C、D 四處停車場位置與收費參考，實際收費以現場公告為準。</p>
+        </div>
+        <a class="parking-image-link" href="parking-map.webp" target="_blank" rel="noopener" aria-label="放大查看 Victor Card 附近停車場資訊地圖">
+          <img class="parking-image" src="parking-map.webp?v=1.3" alt="Victor Card 台中勤美卡牌市集附近停車場資訊地圖" loading="lazy">
+        </a>
+      </section>
+
+      <section class="map-section reveal">
+        <div class="map-heading">
+          <div>
+            <span class="label">交通位置</span>
+            <h2>Google 地圖</h2>
           </div>
+          <a id="mapNavLink" href="#" target="_blank" rel="noopener">開啟導航</a>
         </div>
-      </section>
-
-      <section>
-        <p class="section-label">BOOTH LAYOUT</p>
-        <h2>攤位示意圖</h2>
-        <p class="lead">實際可預約狀態請以線上預約系統顯示為準。</p>
-        <div class="image-frame">
-          <img src="booth-map.png" alt="Victor Card 勤美卡牌市集攤位示意圖">
-        </div>
-      </section>
-
-      <section>
-        <p class="section-label">VISIT INFORMATION</p>
-        <h2>營業資訊</h2>
-        <div class="info-grid">
-          <div class="info-box">
-            <span>營業時間</span>
-            <strong>每週六、日 11:00～18:00</strong>
-          </div>
-          <div class="info-box">
-            <span>地址</span>
-            <strong>台中市西區公益路155巷9號6樓之一</strong>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <p class="section-label">OFFICIAL LINKS</p>
-        <h2>官方連結</h2>
-        <div class="links">
-          <a href="https://line.me/R/ti/p/@victor7717" target="_blank" rel="noopener">官方 LINE</a>
-          <a href="https://www.google.com/maps/search/?api=1&query=台中市西區公益路155巷9號6樓之一" target="_blank" rel="noopener">Google 地圖</a>
-          <a href="https://www.instagram.com/victorcard7717" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.facebook.com/share/18uqRnv14C/" target="_blank" rel="noopener">Facebook</a>
-        </div>
-      </section>
-
-      <section>
-        <p class="section-label">LOCATION</p>
-        <h2>交通位置</h2>
         <div class="map-frame">
           <iframe
             title="Victor Card 台中勤美卡牌市集 Google 地圖"
             src="https://www.google.com/maps?q=%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%8D%80%E5%85%AC%E7%9B%8A%E8%B7%AF155%E5%B7%B79%E8%99%9F6%E6%A8%93%E4%B9%8B%E4%B8%80&output=embed"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </section>
 
-      <section class="review">
-        <div class="stars">★★★★★</div>
+
+      <section class="review-section reveal">
+        <div class="review-stars">★★★★★</div>
         <h2>喜歡 Victor Card 嗎？</h2>
-        <p class="lead">歡迎留下 Google 評論，分享您的體驗。</p>
+        <p>歡迎留下 Google 評論，分享您的體驗。</p>
         <a href="https://g.page/r/CaLxKVSXgwdYEBM/review" target="_blank" rel="noopener">立即留下評論</a>
       </section>
 
-      <section class="parking-section">
-        <p class="section-label">PARKING INFORMATION</p>
-        <h2>停車資訊</h2>
-        <p class="lead">以下為附近停車場參考，實際收費與空位以現場公告為準。</p>
-        <div class="image-frame">
-          <img src="parking-info.png" alt="Victor Card 勤美卡牌市集附近停車資訊">
+      <section class="booth-layout-section reveal">
+        <div class="booth-layout-heading">
+          <span class="label">場地資訊</span>
+          <h2>攤位示意圖</h2>
+          <p>可點擊圖片放大查看攤位編號、尺寸與配置。</p>
         </div>
-        <p class="parking-note">建議假日前往前先預留停車時間，亦可搭乘大眾運輸工具前往。</p>
+        <a class="booth-layout-link" href="booth-layout.webp" target="_blank" rel="noopener" aria-label="放大查看 Victor Card 攤位示意圖">
+          <img class="booth-layout-image" src="booth-layout.webp?v=1.4" alt="Victor Card 台中勤美卡牌市集攤位示意圖" loading="lazy">
+        </a>
       </section>
 
       <footer>© <span id="year"></span> Victor Card</footer>
-    </div>
+    </section>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <a class="floating-line" id="floatingLine" href="#" target="_blank" rel="noopener" aria-label="加入官方 LINE">💬</a>
+
+  <script src="config.js?v=1.4"></script>
+  <script src="script.js?v=1.4"></script>
 </body>
 </html>
